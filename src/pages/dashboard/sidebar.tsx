@@ -83,6 +83,7 @@ export default function Sidebar({ open: openProp, setOpen: setOpenProp }: Props)
       }
       className="px-3 py-2 my-2 hover:bg-[#7ab63f] rounded-xl cursor-pointer flex items-center justify-between group transition-all duration-300"
     >
+      {element.link ? (
       <NavLink
         to={element.link}
         className={({ isActive }) =>
@@ -101,7 +102,18 @@ export default function Sidebar({ open: openProp, setOpen: setOpenProp }: Props)
           {element.name}
         </span>
       </NavLink>
-
+      ) : (
+        <div className="flex items-center gap-4 px-3 py-2">
+    <div className="text-lg">{element.icon}</div>
+    <span
+      className={`whitespace-nowrap transition-all duration-300 ${
+        open ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+      }`}
+    >
+      {element.name}
+    </span>
+  </div>
+)}
       {/* FLECHE */}
       {element.children && open && (
         <MdKeyboardArrowDown

@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { produits } from "../data/produits";
 import type { Produit } from "../parties/type";
 import { useCart } from "../parties/useCart";
-import { Link } from "react-router-dom";
 
 const Produitdetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
