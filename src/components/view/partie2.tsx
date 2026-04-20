@@ -8,7 +8,7 @@ import orange from '../../assets/orange.jpg'
 import chili from '../../assets/chili.jpg'
 
 import persil from '../../assets/persil.jpg'
-import mangue from '../../assets/mangue.jpg'
+import Mangue from '../../assets/Mangue.jpg'
 import pasteque from '../../assets/pasteque.jpg'
 
 import goyave from '../../assets/goyave.jpg'
@@ -28,7 +28,7 @@ const images: imageProps[] = [
   { id: "13", src: orange, alt: 'Orange', name: 'Orange', price: '1000 CFA', className :" h-45 w-70  " },
   { id: "26", src: chili, alt: 'Chili', name: 'Chili', price: '700 CFA' , className :" h-45 w-70  bg-white"},
   { id: "32", src: persil, alt: 'Persil', name: 'Persil', price: '150 CFA', className :" h-45 w-70  bg-white" },
-  { id: "14", src: mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
+  { id: "14", src: Mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
   { id: "20", src: pasteque, alt: 'Pasteque', name: 'Pasteque', price: '1000 CFA', className :" h-45 w-70  bg-white"},
   { id: "23", src: goyave, alt: 'Goyave', name: 'Goyave', price: '800 CFA', className :" h-45 w-70  bg-white" },
   { id: "17", src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: '450 CFA', className :" h-45 w-70  bg-white" },

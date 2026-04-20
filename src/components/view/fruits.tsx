@@ -1,5 +1,5 @@
 import orange from '../../assets/orange.jpg';
-import mangue from '../../assets/Mangue.jpg';
+import Mangue from '../../assets/Mangue.jpg';
 import fraise from '../../assets/fraise.jpg';
 import avocat from '../../assets/avocat.jpg';
 
@@ -22,7 +22,7 @@ import { useState } from 'react';
 
 const images: imageProps[] = [
   { id:'13', src: orange, alt: 'Orange', name: 'Orange', price: '350 CFA', className: " h-45 w-70  bg-white", },
-  { id:'14', src: mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
+  { id:'14', src: Mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
   { id:'15', src: fraise, alt: 'Fraise', name: 'Fraise', price: '400 CFA' },
   { id:'16', src: avocat, alt: 'Avocat', name: 'Avocat', price: '600 CFA' },
   { id:'17', src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: '450 CFA', className :" h-45 w-70  bg-white" },
