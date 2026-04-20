@@ -1,0 +1,33 @@
+import Bannerbleu from "../../assets/bannerbleu.jpg"
+interface imageprops {
+  src: string;
+  alt: string;
+}
+
+const images :imageprops [] = [
+  { src: Bannerbleu, alt: "Banner bleu" }
+]
+
+
+
+function Partie1() {
+  return (
+    <div>
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Découvrez notre engagement envers la qualité</h2>
+            <p className="text-lg text-gray-700 mb-6">Chez Kaay Nduggu, nous nous engageons à fournir des produits agricoles de la plus haute qualité. Nous travaillons en étroite collaboration avec les producteurs locaux pour garantir que chaque produit que vous achetez est frais, durable et cultivé avec soin.</p>
+            <a href="/shop" className="inline-block bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition duration-300">Explorez notre boutique</a>
+          </div>
+          <div>
+            <img src={images[0].src} alt={images[0].alt} className="w-full h-64 object-cover rounded-lg shadow-md"/>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  )
+}
+
+export default Partie1
