@@ -1,4 +1,4 @@
-import mangue from '../../assets/mangue.jpg';
+import Mangue from '../../assets/Mangue.jpg';
 import lettue from '../../assets/lettue.jpg';
 import fraise from '../../assets/fraise.jpg';
 import avocat from '../../assets/avocat.jpg';
@@ -20,7 +20,7 @@ import { useCart } from '../parties/useCart';
 
 
 const images: imageProps[] = [
-  { id: "14", src: mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
+  { id: "14", src: Mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
   { id: "2", src: lettue, alt: 'Lettue', name: 'Lettue', price: '300 CFA' , className :" h-45 w-70  "},
   { id: "15", src: fraise, alt: 'Fraise', name: 'Fraise', price: '400 CFA', className :" h-45 w-70  "},
   { id: "16", src: avocat, alt: 'Avocat', name: 'Avocat', price: '600 CFA', className :" h-45 w-70  " },
