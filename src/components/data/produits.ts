@@ -14,7 +14,7 @@ import oigno from '../../assets/oigno.jpg';
 import betterave from '../../assets/betterave.jpg';
 
 import orange from '../../assets/orange.jpg';
-import mangue from '../../assets/mangue.jpg';
+import mangue from '../../assets/Mangue.jpg';
 import fraise from '../../assets/fraise.jpg';
 import avocat from '../../assets/avocat.jpg';
 import kiwi from '../../assets/kiwi.jpg';

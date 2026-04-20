@@ -28,7 +28,7 @@ function AboutPage() {
   return (
     <div>
         <section>
-        <div className="grid grid-cols-2 lg:grid-cols-2  container mx-auto py-16 px-26 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10  container mx-auto py-16  gap-6">
         <div className="container mx-auto py-16 grid grid-rows-2 px-16">
         <h1 className="text-3xl font-bold mb-1">About Us</h1>
         <p className="text-gray-600 mb-2">Tyna Giang’s integrated agro-forestry farming model is the first project in Vietnam to achieve the highest ranking in the “100 projects to combat climate change” by the Ministry of Environment, Energy and Sea. France organized in 2016 …</p>
