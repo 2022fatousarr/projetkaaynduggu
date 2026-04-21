@@ -31,14 +31,14 @@ import ProfilePage from "./pages/dashboard/profilepage";
 
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/shop" element={<ShopPage />} />
-          <Route path="/shop/fruits" element={<ShopPage />} />
-          <Route path="/legumes" element={<LegumesPage />} />
-          <Route path="/condiments" element={<CondimentsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/produit/:id" element={<ProductDetail />} /> {/* Route pour les détails du produit */}
+          <Route path="shop" element={<ShopPage />} />
+          <Route path="shop/fruits" element={<ShopPage />} />
+          <Route path="legumes" element={<LegumesPage />} />
+          <Route path="condiments" element={<CondimentsPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="produit/:id" element={<ProductDetail />} /> {/* Route pour les détails du produit */}
           </Route>
 
         <Route path="/se_connecter" element={<Se_ConnecterPage />} />
