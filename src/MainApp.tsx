@@ -38,9 +38,10 @@ import ProfilePage from "./pages/dashboard/profilepage";
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/se_connecter" element={<Se_ConnecterPage />} />
           <Route path="/produit/:id" element={<ProductDetail />} /> {/* Route pour les détails du produit */}
           </Route>
+
+        <Route path="/se_connecter" element={<Se_ConnecterPage />} />
         
       </Routes>
     </div>
