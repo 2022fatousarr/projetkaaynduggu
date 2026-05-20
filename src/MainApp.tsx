@@ -14,6 +14,8 @@ import SidebarShop from "./pages/dashboard/sidebarcart";
 import CommandePage from "./pages/dashboard/commande";
 import DashboardHome from "./pages/dashboard/dashboardhome";
 import ProfilePage from "./pages/dashboard/profilepage";
+import PanierPage from "./pages/panier";
+
   
    function MainApp() {
    return (
@@ -42,6 +44,7 @@ import ProfilePage from "./pages/dashboard/profilepage";
           </Route>
 
         <Route path="/se_connecter" element={<Se_ConnecterPage />} />
+        <Route path="/panier" element={<PanierPage  />} />
         
       </Routes>
     </div>

@@ -1,7 +1,17 @@
 import { useCart } from "../../components/parties/useCart";
+import { Link } from "react-router-dom";
 
 const SidebarCart = () => {
   const { cart, open, setOpen, removeFromCart } = useCart();
+  const sendOrder = () => {
+  const message = cart
+    .map(item => `${item.nom} x1`)
+    .join("%0A");
+
+  window.open(
+    `https://wa.me/221782157371?text=Commande:%0A${message}`, "_blank"
+  );
+};
 
   return (
     <>
@@ -20,12 +30,10 @@ const SidebarCart = () => {
       >
         <div className="p-4 border-b flex justify-between">
           <h2 className="font-bold">Mon Panier</h2>
-          <button onClick={() => setOpen(false)} className="text-red-500">✖</button>
+          <button onClick={() => setOpen(false)} className="text-gray-500 hover:text-gray-700">✖</button>
         </div>
 
-          <div className="flex-1 p-4 space-y-3 overflow-y-auto">
-          ...
-         </div>
+        
 
         <div className="p-4 space-y-3">
           {cart.length === 0 ? (
@@ -58,7 +66,33 @@ const SidebarCart = () => {
             ))
           )}
         </div>
-      </div>
+        <div className="absolute bottom-0 left-0 w-full p-4 border-t bg-white space-y-3 space-x-2.5">
+
+  {/* Bouton voir panier */}
+  <Link to="/panier"  onClick={() => setOpen(false)}>
+  <button
+    className="w-full bg-gray-200 py-2 rounded font-semibold"
+    onClick={() => {
+      setOpen(false);
+      
+    }}
+  >
+    Voir mon panier
+  </button>
+  </Link>
+
+  {/* Bouton commander */}
+  <button
+    className="w-full bg-[#75ab3f] text-white py-2 rounded font-semibold"
+    onClick={sendOrder}
+>
+  Commander sur WhatsApp
+</button>
+
+</div>
+
+         </div>
+         
     </>
   );
 };

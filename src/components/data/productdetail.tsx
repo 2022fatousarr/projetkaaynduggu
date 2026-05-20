@@ -20,7 +20,7 @@ const Produitdetail: React.FC = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50  py-2">
 
       <div className="container mx-auto px-4 py-60 mt-20 grid lg:grid-cols-2 gap-10 items-center">
 
@@ -30,12 +30,12 @@ const Produitdetail: React.FC = () => {
           <img
             src={product.image}
             alt={product.nom}
-            className=" h-100 object-cover rounded-xl mx-auto w-xl"
+            className=" h-auto object-cover rounded-xl mx-auto w-xl"
           />
         </div>
 
         {/* DETAILS */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-5">
+        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-5 h-auto">
           
           <h1 className="text-3xl font-bold text-gray-800">
             {product.nom}
@@ -48,7 +48,7 @@ const Produitdetail: React.FC = () => {
           </p>
 
           <p className="text-2xl font-bold text-[#88c74a]">
-            {product.prix} FCFA / kg
+            {product.prix} FCFA / {product.unite}
           </p>
 
           <p className="text-sm text-gray-500">
@@ -57,7 +57,7 @@ const Produitdetail: React.FC = () => {
 
           {/* BOUTON */}
           <button
-            onClick={() => addToCart(product)}
+            onClick={() => addToCart({...product, quantity: 1})}
             className="w-full bg-[#88c74a] hover:bg-[#ffc105] transition text-white py-3 rounded-xl font-semibold shadow-md"
           >
             🛒 Ajouter au panier

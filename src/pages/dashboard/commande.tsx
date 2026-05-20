@@ -37,7 +37,7 @@ const CommandePage = () => {
               <td>Awa</td>
               <td>Tomate</td>
               <td>1000 FCFA</td>
-              <td className="text-red-500">Annulé</td>
+              <td className="text-orange-500 font-medium">Annulé</td>
             </tr>
           </tbody>
         </table>

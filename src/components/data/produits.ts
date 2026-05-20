@@ -37,6 +37,15 @@ import persil from '../../assets/persil.jpg';
 import poivrenoir from '../../assets/poivrenoir.jpg';
 import pimentséché from '../../assets/pimentséché.jpg';
 
+import jus1 from '../../assets/jus1.png';
+import jus2 from '../../assets/jus2.png';
+import jus3 from '../../assets/jus3.png';
+import jus4 from '../../assets/jus4.jpg';
+
+import pfruits from '../../assets/pfruits.jpg';
+import plegumes from '../../assets/plegumes.jpg';
+import premium1 from '../../assets/premium1.jpg';
+
 
 export const produits: Produit[] = [
   {
@@ -46,7 +55,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: manioc,
     description: "Croquant, juteux.",
-    stock: 15
+    stock: 15,
+    quantity: 0
   },
 
     {
@@ -56,7 +66,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: lettue,
     description: "Croquant, juteux.",
-    stock: 10
+    stock: 10,
+    quantity: 0
   },
 
   {
@@ -66,7 +77,8 @@ export const produits: Produit[] = [
     unite: "L",
     image: nadio,
     description: "Fraîche et nutritive.",
-    stock: 5
+    stock: 5,
+    quantity: 0
 
   },
 
@@ -78,7 +90,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: tomate,
     description: "Douce .",
-    stock: 20
+    stock: 20,
+    quantity: 0
   },
   
   {
@@ -88,7 +101,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: comcombre,
     description: "Croquant et rafraîchissant.",
-    stock: 15
+    stock: 15,
+    quantity: 0
   },
 
   {
@@ -98,7 +112,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: aubergine,
     description: "Croustillant et rafraîchissant.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 
   },
 
@@ -109,7 +124,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: chou,
     description: "Croquant et nutritif.",
-    stock: 30
+    stock: 30,
+    quantity: 0
 },
 
 {
@@ -119,7 +135,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: pommedeterre,
     description: "Riche en amidon et polyvalente.",
-    stock: 40
+    stock: 40,
+    quantity: 0
 },
 
 {
@@ -129,7 +146,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: navet,
     description: "Légume-racine croquant et légèrement sucré.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -139,7 +157,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: gombo,
     description: "Légume gélatineux utilisé dans les plats mijotés.",
-    stock: 15
+    stock: 15,
+    quantity: 0
 },
 
 {
@@ -149,7 +168,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: oigno,
     description: "Légume aromatique utilisé dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -159,47 +179,52 @@ export const produits: Produit[] = [
     unite: "kg",
     image: betterave,
     description: "Légume racine riche en nutriments.",
-    stock: 15
+    stock: 15,
+    quantity: 0
 },
 
 {
     id: "13",
-    nom: "orange",
+    nom: "Orange",
     prix: 200,
     unite: "kg",
     image: orange,
     description: "Fruit riche en vitamine C.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
     id: "14",
-    nom: "mangue",
+    nom: "Mangue",
     prix: 300,
     unite: "kg",
     image: mangue,
     description: "Fruit exotique sucré.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
     id: "15",
-    nom: "fraise",
+    nom: "Fraise",
     prix: 250,
     unite: "kg",
     image: fraise,
     description: "Fruit riche en vitamine C.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
     id: "16",
-    nom: "avocat",
+    nom: "Avocat",
     prix: 400,
     unite: "kg",
     image: avocat,
     description: "Fruit riche en lipides sains.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -209,7 +234,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: kiwi,
     description: "Fruit riche en vitamine C.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
@@ -219,7 +245,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: pomme,
     description: "Fruit riche en eau et en vitamine C.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -229,7 +256,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: banane,
     description: "Fruit riche en vitamine C.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
@@ -239,59 +267,65 @@ export const produits: Produit[] = [
      unite: "kg",
      image: pasteque,
      description: "Fruit riche en potassium.",
-     stock: 25
+     stock: 25,
+     quantity: 0
 },
 
 
 
 {
     id: "21",
-     nom: "poire",
+     nom: "Poire",
      prix: 800,
       unite: "kg",
       image: poire,
       description: "Fruit riche en fibres.",
-      stock: 25
+      stock: 25,
+      quantity: 0
 },
 
 {
     id: "22",
-     nom: "orange",
+     nom: "Orange",
      prix: 900,
       unite: "kg",
       image: orange1,
       description: "Fruit riche en vitamine C.",
-      stock: 25
+      stock: 25,
+      quantity: 0
 },
 
 {
       id: "23",
-     nom: "goyave",
+     nom: "Goyave",
      prix: 1000,
       unite: "kg",
       image: goyave,
       description: "Fruit riche en vitamine C.",
-      stock: 25
+      stock: 25,
+      quantity: 0
 },
 
 {
       id: "24",
-     nom: "ananas",
+     nom: "Ananas",
      prix: 1100,
       unite: "kg",
       image: ananas,
       description: "Fruit tropical sucré.",
-      stock: 20
+      stock: 20,
+      quantity: 0
 },
 
 {
     id: "25",
-    nom: "POIVRON",
+    nom: "Poivron",
     prix: 90,
     unite: "kg",
     image: vjr,
     description: "Le poivron, frais et coloré, apporte du goût et de la vitalité à vos repas . Riche en vitamines et naturellement savoureux, il est parfait pour des plats sains, gourmands et pleins de fraîcheur. Ajoutez une touche de couleur à votre cuisine dès aujourd’hui !",
-    stock: 30
+    stock: 30,
+    quantity: 0
 },
 
 {
@@ -301,7 +335,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: chili,
     description: "Légume épicé et coloré.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
@@ -311,7 +346,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: gingembre,
     description: "Racine aromatique et épicée.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -321,7 +357,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: piment,
     description: "Légume épicé et coloré.",
-    stock: 25
+    stock: 25,
+    quantity: 0
 },
 
 {
@@ -331,7 +368,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: ail,
     description: "Légume aromatique utilisé dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -341,7 +379,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: oignonvert,
     description: "Légume aromatique utilisé dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -351,7 +390,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: laurier,
     description: "Plante aromatique utilisée dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -361,7 +401,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: persil,
     description: "Plante aromatique utilisée dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -371,7 +412,8 @@ export const produits: Produit[] = [
     unite: "kg",
     image: poivrenoir,
     description: "Épice aromatique utilisée dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
 {
@@ -381,10 +423,91 @@ export const produits: Produit[] = [
     unite: "kg",
     image: pimentséché,
     description: "Épice aromatique utilisée dans de nombreux plats.",
-    stock: 20
+    stock: 20,
+    quantity: 0
 },
 
+{
+    id: "35",
+    nom: "Pastèque et Gingembre Jus",
+    prix: 1000,
+    unite: "L",
+    image: jus1,
+    description: "Description du produit 35.",
+    stock: 20,
+    quantity: 0
+
+},
+
+{
+    id: "36",
+    nom: "Tropical",
+    prix: 1000,
+    unite: "L",
+    image: jus2,
+    description: "Description du produit 36.",
+    stock: 20,
+    quantity: 0
+
+},
+
+{
+    id: "37",
+    nom:"Jus d'orange",
+    prix: 1000,
+    unite: "L",
+    image: jus3,
+    description: "Description du produit 37.",
+    stock: 20,
+    quantity: 0
+},
+
+{
+    id: "38",
+    nom: "Jus de fruits mixte",
+    prix: 1000,
+    unite: "L",
+    image: jus4,
+    description: "Description du produit 38.",
+    stock: 20,
+    quantity: 0
+},
+
+{
+    id: "39",
+    nom: "Panier fruit",
+    prix: 10000,
+    unite: "panier",
+    image: pfruits,
+    description: "Offrez-vous un panier de fruits frais, savoureux et 100% naturels. Une sélection idéale pour rester en bonne santé et faire le plein d’énergie chaque jour !",
+    stock: 20,
+    quantity: 0
+
+},
+
+{
+    id: "40",
+    nom: "Panier Légume",
+    prix: 10000,
+    unite: "panier",
+    image: plegumes,
+    description: "Découvrez notre panier de légumes frais, colorés et 100% naturels. Parfait pour des repas sains et savoureux au quotidien !",
+    stock: 20,
+    quantity: 0
+},
+
+{
+    id:"41",
+    nom:"Panier Premium",
+    prix: 12000,
+    unite: "panier",
+    image: premium1,
+    description: "Découvrez notre panier premium, une sélection exclusive de fruits et légumes frais, savoureux et 100% naturels. Parfait pour des repas sains et gourmands au quotidien et c'est pas tout une bouTEILLE de jus vous serez offert!",
+    stock: 20,
+    quantity: 0
+
+}
 
 
 
-];
+]

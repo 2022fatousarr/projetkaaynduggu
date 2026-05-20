@@ -30,7 +30,7 @@ const ProfilePage = () => {
           Modifier profil
         </button>
 
-        <button className="bg-[#ffc105] text-white px-4 py-2 rounded-xl hover:bg-red-600 transition">
+        <button className="bg-[#ffc105] text-white px-4 py-2 rounded-xl hover:bg-[#e6a804] transition">
           Changer mot de passe
         </button>
       </div>

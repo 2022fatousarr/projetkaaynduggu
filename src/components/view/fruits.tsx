@@ -69,6 +69,7 @@ export default function Fruits() {
               description: '',
               stock: 100,
               unite: 'kg',
+              quantity: 1,
             });
           }}
           className='bg-[#88c74a] text-white text-xs md:text-sm px-3 py-1 md:px-4 md:py-2 rounded-lg hover:bg-[#88c7a] w-full '> Ajouter au panier</button>

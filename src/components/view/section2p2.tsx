@@ -5,41 +5,50 @@ import Banner2 from "../../assets/banner2.png";
 
 function Section2p2() {
   return (
-    <div className="container mx-auto py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-      <div className="relative mb-8">
+    <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      {/* CARD 1 */}
+      <div className="relative group overflow-hidden  shadow-lg cursor-pointer">
         <img
           src={Banner1s2}
-          alt="Banner "
-          className="w-full h-64 object-cover rounded-lg  "
+          alt="Grapes"
+          className="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500"
         />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col  items-center justify-center">
-          <img src={Banner1} alt="Banner " className="absolute top-2 left-2" />
-        <p className="absolute text-black font-bold right-40">
-            Grapes <br />
-            100% Natural <br />
-            Fruit Juice{" "}
+
+        {/* overlay */}
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
+
+        {/* contenu */}
+        <div className="absolute inset-0 flex items-center justify-between px-4">
+          <img src={Banner1} alt="grapes" className="w-28 md:w-36" />
+
+          <p className="text-white font-bold text-lg md:text-xl text-right">
+            Raisins <br /> 100% Naturel
           </p>
-          
         </div>
       </div>
 
-      <div className="relative mb-8 ">
+      {/* CARD 2 */}
+      <div className="relative group overflow-hidden  shadow-lg cursor-pointer">
         <img
           src={Banner2s2}
-          alt="Banner "
-          className="w-full h-64 object-cover rounded-lg "
+          alt="Apple"
+          className="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500"
         />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center ">
-        <img src={Banner2} alt="Banner " className="absolute top-4 left-4" />
-          <p className="absolute text-black font-bold right-40">
-            Apple
-            <br />
-            100% Natural <br />
-            Fruit Juice{" "}
+
+        {/* overlay */}
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
+
+        {/* contenu */}
+        <div className="absolute inset-0 flex items-center justify-between px-4">
+          <img src={Banner2} alt="apple" className="w-28 md:w-36" />
+
+          <p className="text-white font-bold text-lg md:text-xl text-right">
+            Pommes fraîches <br /> Jus naturel
           </p>
-          
         </div>
       </div>
+
     </div>
   );
 }
