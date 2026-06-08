@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../components/parties/useCart";
 import { useState } from "react";
 
 const PanierPage = () => {
-  const { cart, getTotal } = useCart();
+  const { cart, getTotal , increaseQuantity,
+  decreaseQuantity} = useCart();
 
   const [nom, setNom] = useState("");
   const [telephone, setTelephone] = useState("");
   const [adresse, setAdresse] = useState("");
+
 
   const handleOrder = () => {
     const produits = cart
@@ -28,8 +31,10 @@ const PanierPage = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-4 space-y-6">
-
-      <h1 className="text-2xl font-bold">Ma commande</h1>
+    <Link to="/shop">
+     <h1 className="text-2xl font-bold">Ma commande</h1>
+    </Link>
+     
 
       {/* Produits */}
       <div className="bg-white p-4 rounded shadow space-y-3">
@@ -37,10 +42,57 @@ const PanierPage = () => {
           <p>Votre panier est vide</p>
         ) : (
           cart.map(item => (
-            <div key={item.id} className="flex justify-between">
-              <span>{item.nom} x{item.quantity ?? 1}</span>
-              <span>{item.prix * (item.quantity ?? 1)} FCFA</span>
-            </div>
+           <div
+  key={item.id}
+  className="flex justify-between items-center border-b pb-3"
+>
+
+  <div>
+
+    <p className="font-semibold">
+      {item.nom}
+    </p>
+
+    {/* QUANTITE */}
+    <div className="flex items-center gap-3 mt-2">
+
+      {/* MOINS */}
+      <button
+        onClick={() =>
+          decreaseQuantity(item.id)
+        }
+        className="w-8 h-8 rounded-full bg-gray-200 font-bold"
+      >
+        -
+      </button>
+
+      {/* NOMBRE */}
+      <span className="font-bold">
+        {item.quantity}
+      </span>
+
+      {/* PLUS */}
+      <button
+        onClick={() =>
+          increaseQuantity(item.id)
+        }
+        className="w-8 h-8 rounded-full bg-[#75ab3f] text-white font-bold"
+      >
+        +
+      </button>
+
+    </div>
+
+  </div>
+
+  {/* PRIX */}
+  <p className="font-bold text-[#75ab3f]">
+
+    {item.prix * item.quantity} FCFA
+
+  </p>
+
+</div>
           ))
         )}
       </div>

@@ -15,7 +15,7 @@ export interface imageProps{
     alt:string;
     className?:string;
     name?:string;
-    price?:string;
+    price:string;
     description?:string;
     id:string;
 }
@@ -29,10 +29,12 @@ export interface CartItem {
     unite?: string;
     description?: string;
     stock?: number;
+     images?: string[];
 }
 
 export interface Produit extends CartItem {
     unite: string;
     description: string;
     stock: number;
+    quantity: number;
 }

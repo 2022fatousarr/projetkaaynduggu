@@ -11,6 +11,8 @@ import type { imageProps } from '../parties/type'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useCart } from '../parties/useCart';
+import { ShoppingCart, Eye } from 'lucide-react';
+import { toast } from 'sonner';
 
 const images1: imageProps[] = [
   { id: "39", src: pfruits, alt: 'pfruits', name: 'Panier fruit', price: '10.000 CFA' },
@@ -29,6 +31,7 @@ const images: imageProps[] = [
 export default function Partie2() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const { addToCart } = useCart();
+  
 
   return (
     <div className="bg-gray-50 py-10">
@@ -67,58 +70,64 @@ export default function Partie2() {
       </div>
 
       {/* 🔥 SECTION 3 : produits */}
-      <div className="container mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
-
+      <div className="container mx-auto py-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {images.map((image, index) => (
-          <Link key={index} to={`/produit/${image.id}`}>
-            <div
-              onMouseEnter={() => setActiveId(image.id)}
-              onMouseLeave={() => setActiveId(null)}
-              onTouchStart={() => setActiveId(image.id)}
-              onTouchEnd={() => setActiveId(null)}
-              className={`bg-white rounded-2xl hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer ${
-                activeId === image.id ? 'shadow-lg' : ''
-              }`}
-            >
+          <div
+            key={index}
+            onMouseEnter={() => setActiveId(image.id)}
+            onMouseLeave={() => setActiveId(null)}
+            onTouchStart={() => setActiveId(image.id)}
+            onTouchEnd={() => setActiveId(null)}
+            className={`bg-white rounded-2xl hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer ${
+              activeId === image.id ? 'bg-white shadow-lg' : ''
+            }`}
+          >
+            <Link to={`/produit/${image.id}`} className="block">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-40 object-contain transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-40 object-contain transition-transform duration-300 hover:scale-105"
               />
-
               <div className="p-3 text-center space-y-1">
                 <p className="text-[#88c74a] font-semibold text-lg">
                   {image.name}
                 </p>
-                <p className="text-gray-600 text-sm">
-                  {image.price}
-                </p>
-
-                {activeId === image.id && (
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      addToCart({
-                        id: image.id,
-                        nom: image.name ?? 'Produit',
-                        prix: parseInt(image.price ?? '0', 10),
-                        image: image.src,
-                        unite: '1',
-                        description: image.name ?? 'Produit',
-                        stock: 1,
-                        quantity: 1,
-                      });
-                    }}
-                    className="bg-[#88c74a] text-white text-xs md:text-sm px-3 py-1 md:px-4 md:py-2 rounded-lg hover:bg-[#6da63c] transition w-full"
-                  >
-                    Ajouter au panier
-                  </button>
-                )}
+                <p className="text-gray-600 text-sm">{image.price}</p>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
 
+            {activeId === image.id && (
+              <div className="p-3 flex items-center justify-center gap-3">
+                <button
+                  onClick={() => {
+                    addToCart({
+                      id: image.id,
+                      nom: image.name ?? 'Produit',
+                      prix:  Number(
+  image.price.replace(/[^\d]/g, "")
+),
+                      image: image.src,
+                      description: image.name ?? 'Produit',
+                      stock: 1,
+                      unite: 'L',
+                      quantity: 1,
+                    });
+                    toast.success(`${image.name} ajouté au panier!`);
+                  }}
+                  className="bg-[#88c74a] text-white p-3 rounded-full hover:bg-black transition"
+                >
+                  <ShoppingCart size={20} />
+                </button>
+                <Link
+                  to={`/produit/${image.id}`}
+                  className="bg-[#88c74a] text-white p-3 rounded-full hover:bg-black transition"
+                >
+                  <Eye size={20} />
+                </Link>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

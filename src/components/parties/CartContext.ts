@@ -8,6 +8,8 @@ export type cartContextType = {
   getTotal: () => number;
   open: boolean;
   setOpen: (v: boolean) => void;
+  increaseQuantity: (id: string) => void;
+decreaseQuantity: (id: string) => void;
 };
 
 export const CartContext = createContext<cartContextType | undefined>(undefined);
