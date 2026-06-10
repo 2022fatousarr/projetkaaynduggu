@@ -6,7 +6,7 @@ import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuPackage } from "react-icons/lu";
 import { GiCarrot } from "react-icons/gi";
-import { FaStore } from "react-icons/fa";
+// import { FaStore } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 
 const sidebar = [
@@ -15,11 +15,11 @@ const sidebar = [
     name: "Tableau de bord",
     link: "/dashboard",
   },
-  {
-    icon: <FaStore />,
-    name: "Boutique",
-    link: "/",
-  },
+  // {
+  //   icon: <FaStore />,
+  //   name: "Boutique",
+  //   link: "/",
+  // },
   {
     icon: <GiCarrot />,
     name: "Produits",

@@ -45,6 +45,9 @@ import jus4 from '../../assets/jus4.jpg';
 import pfruits from '../../assets/pfruits.jpg';
 import plegumes from '../../assets/plegumes.jpg';
 import premium1 from '../../assets/premium1.jpg';
+import orange2 from '../../assets/orange2.jpg';
+import poivreblanc from '../../assets/poivreblanc.jpg';
+import poivrerouge from '../../assets/poivrerouge.jpg';
 
 export const produits: Produit[] = [
   {
@@ -203,7 +206,7 @@ export const produits: Produit[] = [
     description: "Oranges juteuses et parfumées, riches en vitamine C, idéales pour les jus frais, snacks sains ou desserts fruités pleins de vitalité.",
     stock: 25,
     quantity: 0,
-    images: [orange, orange, orange]
+    images: [orange, orange1, orange2]
   },
 
   {
@@ -445,7 +448,7 @@ export const produits: Produit[] = [
     description: "Poivre noir de qualité, parfait pour relever toutes vos préparations avec une saveur chaude, piquante et naturellement aromatique.",
     stock: 20,
     quantity: 0,
-    images: [poivrenoir, poivrenoir, poivrenoir]
+    images: [poivrenoir, poivreblanc, poivrerouge]
   },
 
   {

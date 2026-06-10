@@ -66,11 +66,11 @@ function Footer() {
           <div className="flex flex-col gap-3 text-gray-600 text-sm">
 
             <Link to="/about" className="hover:text-[#88c74a] transition">
-              About Us
+              A Propos
             </Link>
 
-            <Link to="/checkout" className="hover:text-[#88c74a] transition">
-              Checkout
+            <Link to="/valider" className="hover:text-[#88c74a] transition">
+              Valider
             </Link>
 
             <Link to="/contact" className="hover:text-[#88c74a] transition">
@@ -84,43 +84,43 @@ function Footer() {
           </div>
         </div>
 
-        {/* ACCOUNT */}
+        {/* MON COMPTE */}
         <div>
           <p className="font-bold mb-4">
-            MY ACCOUNT
+            MON COMPTE
           </p>
 
           <div className="flex flex-col gap-3 text-gray-600 text-sm">
 
             <Link to="/" className="hover:text-[#88c74a] transition">
-              My Account
+              Mon Compte
             </Link>
 
             <Link to="/contact" className="hover:text-[#88c74a] transition">
               Contact
             </Link>
 
-            <Link to="/cart" className="hover:text-[#88c74a] transition">
-              Shop Cart
+            <Link to="/panier" className="hover:text-[#88c74a] transition">
+              Panier
             </Link>
 
             <Link to="/" className="hover:text-[#88c74a] transition">
-              Tracking Order
+              Suivre ma commande
             </Link>
 
           </div>
         </div>
 
-        {/* QUICK SHOP */}
+        {/* ACHAT RAPIDE */}
         <div>
           <p className="font-bold mb-4">
-            QUICK SHOP
+           ACHAT RAPIDE
           </p>
 
           <div className="flex flex-col gap-3 text-gray-600 text-sm">
 
             <Link to="/" className="hover:text-[#88c74a] transition">
-              Shipping & Returns
+              Livraison & Retours
             </Link>
 
             <Link to="/contact" className="hover:text-[#88c74a] transition">
@@ -128,11 +128,11 @@ function Footer() {
             </Link>
 
             <Link to="/" className="hover:text-[#88c74a] transition">
-              Secure Shopping
+              Commande sécurisée
             </Link>
 
             <Link to="/" className="hover:text-[#88c74a] transition">
-              Affiliate
+              programme d'ffiliation
             </Link>
 
           </div>
@@ -141,11 +141,11 @@ function Footer() {
         {/* NEWSLETTER */}
         <div>
           <p className="font-bold mb-4">
-            JOIN OUR NEWSLETTER NOW
+            RESTEZ INFORMÉS DE NOS NOUVEAUTÉS
           </p>
 
           <p className="text-sm text-gray-600 leading-relaxed">
-            Get E-mail updates about our latest shop and special offers
+           Recevez par e-mail les dernières nouveautés de notre boutique ainsi que nos offres spéciales
           </p>
 
           <div className="flex flex-col sm:flex-row w-full mt-5 gap-3 sm:gap-0">
@@ -173,7 +173,7 @@ function Footer() {
 
       {/* COPYRIGHT */}
       <div className="border-t border-gray-200 py-4 text-center text-sm text-gray-500 px-4">
-        © 2026 Kaay Nduggu. All rights reserved.
+        © 2026 Kaay Nduggu.Tous droits réservés.
       </div>
 
     </footer>

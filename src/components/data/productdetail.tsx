@@ -40,7 +40,7 @@ const Produitdetail: React.FC = () => {
   <img
     src={selectedImage}
     alt={product.nom}
-    className="h-auto object-cover rounded-xl mx-auto w-xl"
+    className="w-full h-[500px] object-contain rounded-xl "
   />
 
 

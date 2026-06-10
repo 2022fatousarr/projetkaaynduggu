@@ -15,7 +15,19 @@ export default function Se_ConnecterPage() {
 
   return (
     <div className="bg-[#88c74a] flex items-center justify-center h-screen  w-full">
-      <div className="bg-white p-8 rounded-xl">
+      {/* <div className="bg-white p-8 rounded-xl"> */}
+         <div className="bg-white rounded-xl overflow-hidden flex w-[900px] h-[500px] shadow-lg">
+    
+    {/* Partie Logo */}
+    <div className="w-1/2 bg-[#88c74a] flex items-center justify-center">
+      <img
+        src="/logo.png"
+        alt="Logo"
+        className="w-64 h-auto"
+      />
+    </div>
+    {/* {Partie Formulaire} */}
+    <div className="w-1/2 p-8">
         <h1 className="text-4xl font-bold text-[#88c74a] text-center">
           Page de connexion
         </h1>
@@ -53,6 +65,7 @@ export default function Se_ConnecterPage() {
             Se connecter
           </button>
         </form>
+        </div>
       </div>
     </div>
   );

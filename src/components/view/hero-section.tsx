@@ -28,15 +28,7 @@ export default function HeroSection() {
     buttonStyle:
       "bg-[#f7efd8] text-[#88c74a] border-2 border-[#88c74a] hover:bg-[#88c74a] hover:text-white rounded-2xl  h-10 flex texte-xl font-semibold items-center justify-center",
   },
-  {
-    title: "Fruits Frais",
-    text: "Savourez nos fruits naturels et juteux",
-    image: Orange,
-    bg: BgHero,
-    button: "Découvrir",
-    buttonStyle:
-      "bg-[#fff2d1] text-[#88c74a] border-2 border-[#88c74a] hover:bg-[#88c74a] hover:text-white rounded-2xl  h-10 flex texte-xl font-semibold items-center justify-center",
-  },
+
 ];
 
   const [index, setIndex] = useState(0);

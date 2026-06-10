@@ -14,10 +14,10 @@ import type { imageProps } from "../components/parties/type";
 
 
 const images: imageProps[] = [
-  { id:'1', src: team1 , alt: 'Team Member 1', name: 'John Doe', price: 'CEO'},
-  { id:'2', src: team3 , alt: 'Team Member 3', name: 'Jane Smith', price: 'CTO'},
-  { id:'3', src: team4 , alt: 'Team Member 2', name: 'Jane Smith', price: 'CTO'},
-  { id:'4', src: team3 , alt: 'Team Member 3', name: 'Mike Johnson', price: 'CFO'},
+  { id:'1', src: team1 , alt: 'Team Member 1', name: 'John Doe', price: 'Qualité des produits'},
+  { id:'2', src: team3 , alt: 'Team Member 3', name: 'Jane Smith', price: 'Logistique'},
+  { id:'3', src: team4 , alt: 'Team Member 2', name: 'Jane Smith', price: 'Livraison'},
+  { id:'4', src: team3 , alt: 'Team Member 3', name: 'Mike Johnson', price: 'Service client'},
 
 ]
 
@@ -36,15 +36,14 @@ function AboutPage() {
   <div className="space-y-4 text-center md:text-left">
     
     <h1 className="text-2xl md:text-4xl font-bold">
-      About Us
+      À propos de Kaay Nduggu
     </h1>
 
     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-      Tyna Giang’s integrated agro-forestry farming model is the first project in Vietnam to achieve the highest ranking in the “100 projects to combat climate change” by the Ministry of Environment, Energy and Sea. France organized in 2016 …
-    </p>
-
+      Kaay Nduggu est une plateforme dédiée à la vente de fruits et légumes frais de qualité. Notre mission est de faciliter l'accès à des produits soigneusement sélectionnés, tout en garantissant fraîcheur, fiabilité et satisfaction à nos clients.
+    </p> 
     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Neque porro quisquam est, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+     Nous collaborons avec des fournisseurs de confiance afin d'offrir des produits sains à des prix accessibles. Grâce à un service simple, rapide et professionnel, nous accompagnons les particuliers et les entreprises dans leurs besoins quotidiens en produits frais.
     </p>
 
   </div>
@@ -209,26 +208,13 @@ function AboutPage() {
   </div>
 </div>
 
-        {/* <div>
-        <h1 className="text-3xl font-bold flex justify-center items-center py-8 ">Meet Our Team</h1>
-        <div className="container mx-auto py-16 px-26 grid grid-cols-1 md:grid-cols-4 gap-8">
-          {images.map((image, index) => (
-            <div key={index} className="bg-white rounded-lg ">
-              <img src={image.src} alt={image.alt} className="w-full  object-cover" />
-              <div className="p-4">
-                <h3 className="text-xl font-bold mb-2">{image.name}</h3>
-                <p className="text-gray-600">{image.price}</p>
-              </div>
-            </div>
-          ))}
-          </div>
-        </div> */}
+   
 
         <div className="py-10 md:py-16">
 
   {/* TITRE */}
   <h1 className="text-2xl md:text-4xl font-bold text-center mb-10">
-    Meet Our Team
+    Notre équipe
   </h1>
 
   {/* GRID */}
