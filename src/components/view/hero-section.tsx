@@ -3,10 +3,9 @@ import BgHero from "../../assets/bg-hero.jpg";
 import bgslide2 from "../../assets/bgslide2.jpg";
 import Orange from "../../assets/orange.png";
 import Slide2 from "../../assets/slide2.png";
-// import Slide3 from "../../assets/slide3.png";
 import Button from "../parties/boutton";
 import { motion, AnimatePresence } from "framer-motion";
-// import { button } from "framer-motion/client";
+
 
 export default function HeroSection() {
  const slides = [

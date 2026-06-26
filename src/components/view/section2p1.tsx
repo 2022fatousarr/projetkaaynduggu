@@ -15,16 +15,16 @@ import { ShoppingCart, Eye } from 'lucide-react';
 import { toast } from 'sonner';
 
 const images1: imageProps[] = [
-  { id: "39", src: pfruits, alt: 'pfruits', name: 'Panier fruit', price: '10.000 CFA' },
-  { id: "40", src: plegumes, alt: 'Plegume', name: 'Panier legume ', price: '10.000 CFA' },
-  { id: "41", src: premium1, alt: 'Premium1', name: 'Panier Premium', price: '10.000 CFA'},
+  { id: "39", src: pfruits, alt: 'pfruits', name: 'Panier fruit', price: 10000 },
+  { id: "40", src: plegumes, alt: 'Plegume', name: 'Panier legume ', price: 10000 },
+  { id: "41", src: premium1, alt: 'Premium1', name: 'Panier Premium', price: 10000},
 ]
 
 const images: imageProps[] = [
-  { id: "35", src: jus1, alt: 'Jus1', name: 'Pastèque et Gingembre Jus', price: '1000 CFA' },
-  { id: "36", src: jus2, alt: 'Jus2', name: 'Tropical ', price: '1000 CFA' },
-  { id: "37", src: jus3, alt: 'Jus3', name: 'Jus d\'orange', price: '1000 CFA'},
-  { id: "38", src: jus4, alt: 'Jus4', name: 'Jus de fruits mixte', price: '1000 CFA', },
+  { id: "35", src: jus1, alt: 'Jus1', name: 'Pastèque et Gingembre Jus', price: 1000  },
+  { id: "36", src: jus2, alt: 'Jus2', name: 'Tropical ', price: 1000  },
+  { id: "37", src: jus3, alt: 'Jus3', name: 'Jus d\'orange', price: 1000 },
+  { id: "38", src: jus4, alt: 'Jus4', name: 'Jus de fruits mixte', price: 1000 , },
 
 ]
 
@@ -102,15 +102,13 @@ export default function Partie2() {
                   onClick={() => {
                     addToCart({
                       id: image.id,
-                      nom: image.name ?? 'Produit',
-                      prix:  Number(
-  image.price.replace(/[^\d]/g, "")
-),
-                      image: image.src,
-                      description: image.name ?? 'Produit',
-                      stock: 1,
-                      unite: 'L',
-                      quantity: 1,
+                    nom: image.name ,
+                    prix: image.price ,
+                    image: image.src,
+                    description: '',
+                    stock: 100,
+                    unite: 'L',
+                    quantity: 1,
                     });
                     toast.success(`${image.name} ajouté au panier!`);
                   }}

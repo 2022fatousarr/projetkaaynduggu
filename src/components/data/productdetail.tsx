@@ -120,7 +120,7 @@ const Produitdetail: React.FC = () => {
       <div
         key={index}
         onClick={() => setSelectedImage(img)}
-        className={`w-40 h-40 rounded-2xl border cursor-pointer overflow-hidden
+        className={`w-40 h-40 rounded-2xl border cursor-pointer overflow-hidden 
           ${
             selectedImage === img
               ? "border-[#88c74a]"
@@ -130,7 +130,7 @@ const Produitdetail: React.FC = () => {
         <img
           src={img}
           alt={`mini-${index}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full  object-contain"
         />
       </div>
     ))}

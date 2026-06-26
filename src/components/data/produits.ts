@@ -53,7 +53,7 @@ export const produits: Produit[] = [
   {
     id: "1",
     nom: "Manioc",
-    prix: 100,
+    prix: 200,
     unite: "kg",
     image: manioc,
     description: "Racine dense et nourrissante, parfaite pour des plats traditionnels ou une purée savoureuse, avec une texture tendre et un goût légèrement sucré.",
@@ -65,7 +65,7 @@ export const produits: Produit[] = [
   {
     id: "2",
     nom: "Lettue",
-    prix: 150,
+    prix: 300,
     unite: "kg",
     image: lettue,
     description: "Feuilles vertes fraîches et croquantes, idéales pour les salades, sandwiches ou accompagnements légers, avec une saveur délicate et rafraîchissante.",
@@ -79,7 +79,7 @@ export const produits: Produit[] = [
     id: "3",
     nom: "Nadio",
     prix: 200,
-    unite: "L",
+    unite: "kg",
     image: nadio,
     description: "Jus clair et revigorant, riche en minéraux essentiels, parfait pour accompagner les repas ou étancher la soif pendant les journées chaudes.",
     stock: 5,
@@ -91,7 +91,7 @@ export const produits: Produit[] = [
   {
     id: "4",
     nom: "Tomate",
-    prix: 80,
+    prix: 300,
     unite: "kg",
     image: tomate,
     description: "Tomates mûres, juteuses et éclatantes, parfaites en salades, sauces ou plats mijotés, avec un goût sucré et acidulé naturel.",
@@ -103,7 +103,7 @@ export const produits: Produit[] = [
   {
     id: "5",
     nom: "Comcombre",
-    prix: 80,   
+    prix: 400,   
     unite: "kg",
     image: comcombre,
     description: "Concombre croquant et très rafraîchissant, excellent en salade ou en accompagnement froid, avec une texture hydratante et un goût léger.",
@@ -115,7 +115,7 @@ export const produits: Produit[] = [
   {
     id: "6",
     nom: "Aubergine",
-    prix: 50,
+    prix: 200,
     unite: "kg",
     image: aubergine,
     description: "Aubergine ferme et lisse, idéale pour ratatouilles, grillades ou plats en sauce, apportant douceur et couleur à vos recettes.",
@@ -128,7 +128,7 @@ export const produits: Produit[] = [
   {
     id: "7",
     nom: "Chou",
-    prix: 120,
+    prix: 300,
     unite: "kg",
     image: chou,
     description: "Chou vert frais, riche en fibres et vitamines, parfait pour sautés, soupes ou salades, avec une texture croquante et un goût authentique.",

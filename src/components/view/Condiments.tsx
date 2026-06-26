@@ -21,16 +21,16 @@ import { toast } from 'sonner';
 
 
 const images: imageProps[] = [
-  { id: "25", src: vjr, alt: 'Vjr', name: 'Vjr', price: '500 CFA', className :" h-45 w-70  bg-white"},
-  { id: "26", src: chili, alt: 'Chili', name: 'Chili', price: '300 CFA', className :" h-45 w-70  bg-white" },
-  { id: "27", src: gingembre, alt: 'Gingembre', name: 'Gingembre', price: '400 CFA', className :" h-45 w-70  bg-white" },
-  { id: "28", src: piment, alt: 'Piment', name: 'Piment', price: '600 CFA', className :" h-45 w-70  bg-white" },
-  { id: "29", src: ail, alt: 'Ail', name: 'Ail', price: '200 CFA', className :" h-45 w-70  bg-white" },
-  { id: "30", src: oignovert, alt: 'Oigno-vert', name: 'Oigno-vert', price: '1000 CFA', className :" h-45 w-70  bg-white" },
-  { id: "31", src: laurier, alt: 'Laurier', name: 'Laurier', price: '700 CFA', className :" h-45 w-70  bg-white" },
-  { id: "32", src: persil, alt: 'Persil', name: 'Persil', price: '150 CFA', className :" h-45 w-70  bg-white" },
-  { id: "33", src: poivrenoir, alt: 'Poivre noir', name: 'Poivre noir', price: '250 CFA', className :" h-45 w-70  bg-white" },
-  { id: "34", src: pimentséché, alt: 'Piment séché', name: 'Piment séché', price: '350 CFA', className :" h-45 w-70  bg-white" },
+  { id: "25", src: vjr, alt: 'Vjr', name: 'Vjr', price: 500, className :" h-45 w-70  bg-white"},
+  { id: "26", src: chili, alt: 'Chili', name: 'Chili', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "27", src: gingembre, alt: 'Gingembre', name: 'Gingembre', price: 400, className :" h-45 w-70  bg-white" },
+  { id: "28", src: piment, alt: 'Piment', name: 'Piment', price: 600, className :" h-45 w-70  bg-white" },
+  { id: "29", src: ail, alt: 'Ail', name: 'Ail', price: 200, className :" h-45 w-70  bg-white" },
+  { id: "30", src: oignovert, alt: 'Oigno-vert', name: 'Oigno-vert', price: 1000, className :" h-45 w-70  bg-white" },
+  { id: "31", src: laurier, alt: 'Laurier', name: 'Laurier', price: 700, className :" h-45 w-70  bg-white" },
+  { id: "32", src: persil, alt: 'Persil', name: 'Persil', price: 150, className :" h-45 w-70  bg-white" },
+  { id: "33", src: poivrenoir, alt: 'Poivre noir', name: 'Poivre noir', price: 250, className :" h-45 w-70  bg-white" },
+  { id: "34", src: pimentséché, alt: 'Piment séché', name: 'Piment séché', price: 350, className :" h-45 w-70  bg-white" },
 
 ]
 
@@ -70,14 +70,14 @@ export default function Condiments() {
                 <button
                   onClick={() => {
                     addToCart({
-                      id: image.id,
-                      nom: image.name ?? 'Produit',
-                      prix: parseInt(image.price ?? '0', 10),
-                      image: image.src,
-                      description: '',
-                      stock: 100,
-                      unite: 'kg',
-                      quantity: 1,
+                     id: image.id,
+                    nom: image.name ,
+                    prix: image.price ,
+                    image: image.src,
+                    description: '',
+                    stock: 100,
+                    unite: 'kg',
+                    quantity: 1,
                     });
                     toast.success(`${image.name} ajouté au panier!`);
                   }}

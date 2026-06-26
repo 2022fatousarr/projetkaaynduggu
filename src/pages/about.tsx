@@ -10,15 +10,14 @@ import team4 from "../assets/team4.jpg";
 import team3 from "../assets/team3.jpg";
 
 
-import type { imageProps } from "../components/parties/type";
+import type { imageProps1 } from "../components/parties/type";
 
 
-const images: imageProps[] = [
-  { id:'1', src: team1 , alt: 'Team Member 1', name: 'John Doe', price: 'Qualité des produits'},
-  { id:'2', src: team3 , alt: 'Team Member 3', name: 'Jane Smith', price: 'Logistique'},
-  { id:'3', src: team4 , alt: 'Team Member 2', name: 'Jane Smith', price: 'Livraison'},
-  { id:'4', src: team3 , alt: 'Team Member 3', name: 'Mike Johnson', price: 'Service client'},
-
+const images: imageProps1[] = [
+  { id:'1', src: team1 , alt: 'Team Member 1', name: 'John Doe', description: 'Qualité des produits' },
+  { id:'2', src: team3 , alt: 'Team Member 3', name: 'Jane Smith', description: 'Logistique'},
+  { id:'3', src: team4 , alt: 'Team Member 2', name: 'Jane Smith', description: 'Livraison' },
+  { id:'4', src: team3 , alt: 'Team Member 3', name: 'Mike Johnson', description: 'Service client' },
 ]
 
 

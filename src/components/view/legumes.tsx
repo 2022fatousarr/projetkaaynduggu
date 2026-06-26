@@ -22,18 +22,18 @@ import { toast } from 'sonner';
 
 
 const images: imageProps[] = [
-  { id: "1", src: manioc, alt: 'Manioc',name: 'Manioc', price: '500 CFA' , className :" h-45 w-70 object-cover bg-white"},
-  { id: "2", src: lettue, alt: 'Lettuce', name: 'Lettuce', price: '300 CFA' , className :" h-45 w-70  "},
-  { id: "3", src: nadio, alt: 'Nadio', name: 'Nadio', price: '400 CFA', className :" h-45 w-70  bg-white" },
-  { id: "4", src: tomate, alt: 'Tomate', name: 'Tomate', price: '600 CFA', className :" h-45 w-70  bg-white" },
-  { id: "5", src: comcombre, alt: 'Comcombre', name: 'Comcombre', price: '200 CFA', className :" h-45 w-70  bg-white" },
-  { id: "6", src: aubergine, alt: 'Aubergine', name: 'Aubergine', price: '1000 CFA', className :" h-45 w-70  bg-white" },
-  { id: "7", src: chou, alt: 'Chou', name: 'Chou', price: '700 CFA', className :" h-45 w-70  bg-white" },
-  { id: "8", src: pommedeterre, alt: 'Pomme de terre', name: 'Pomme de terre', price: '150 CFA', className :" h-45 w-70  bg-white" },
-  { id: "9", src: navet, alt: 'Navet', name: 'Navet', price: '250 CFA', className :" h-45 w-70  bg-white" },
-  { id: "10", src: gombo, alt: 'Gombo', name: 'Gombo', price: '350 CFA', className :" h-45 w-70  bg-white" },
-  { id: "11", src: oigno, alt: 'Oignon', name: 'Oignon', price: '800 CFA', className :" h-45 w-70  bg-white" },
-  { id: "12", src: betterave, alt: 'Betterave', name: 'Betterave', price: '450 CFA', className :" h-45 w-70  bg-white" },
+  { id: "1", src: manioc, alt: 'Manioc',name: 'Manioc', price: 200  , className :" h-45 w-70 object-cover bg-white"},
+  { id: "2", src: lettue, alt: 'Lettuce', name: 'Lettuce', price: 500 , className :" h-45 w-70  "},
+  { id: "3", src: nadio, alt: 'Nadio', name: 'Nadio', price: 200, className :" h-45 w-70  bg-white" },
+  { id: "4", src: tomate, alt: 'Tomate', name: 'Tomate', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "5", src: comcombre, alt: 'Comcombre', name: 'Comcombre', price: 400, className :" h-45 w-70  bg-white" },
+  { id: "6", src: aubergine, alt: 'Aubergine', name: 'Aubergine', price: 200, className :" h-45 w-70  bg-white" },
+  { id: "7", src: chou, alt: 'Chou', name: 'Chou', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "8", src: pommedeterre, alt: 'Pomme de terre', name: 'Pomme de terre', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "9", src: navet, alt: 'Navet', name: 'Navet', price: 200, className :" h-45 w-70  bg-white" },
+  { id: "10", src: gombo, alt: 'Gombo', name: 'Gombo', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "11", src: oigno, alt: 'Oignon', name: 'Oignon', price: 300, className :" h-45 w-70  bg-white" },
+  { id: "12", src: betterave, alt: 'Betterave', name: 'Betterave', price: 400, className :" h-45 w-70  bg-white" },
 
 ]
 
@@ -64,7 +64,7 @@ export default function Legumes() {
             />
             <div className="p-3 text-center space-y-1">
               <p className='text-[#88c74a] font-semibold text-lg'>{image.name}</p>
-              <p className="text-gray-600 text-sm">{image.price}</p>
+              <p className="text-gray-600 text-sm">{image.price}CFA</p>
             </div>
           </Link>
 
@@ -74,8 +74,8 @@ export default function Legumes() {
                 onClick={() => {
                   addToCart({
                     id: image.id,
-                    nom: image.name ?? 'Produit',
-                    prix: parseInt(image.price ?? '0', 10),
+                    nom: image.name ,
+                    prix: image.price ,
                     image: image.src,
                     description: '',
                     stock: 100,

@@ -20,11 +20,9 @@ export default function Se_ConnecterPage() {
     
     {/* Partie Logo */}
     <div className="w-1/2 bg-[#88c74a] flex items-center justify-center">
-      <img
-        src="/logo.png"
-        alt="Logo"
-        className="w-64 h-auto"
-      />
+        <h1 className="text-4xl font-bold text-white">
+          Kaay Nduggu
+        </h1>
     </div>
     {/* {Partie Formulaire} */}
     <div className="w-1/2 p-8">

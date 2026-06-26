@@ -23,18 +23,18 @@ import { toast } from 'sonner';
 
 
 const images: imageProps[] = [
-  { id:'13', src: orange, alt: 'Orange', name: 'Orange', price: '350 CFA', className: " h-45 w-70  bg-white", },
-  { id:'14', src: Mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
-  { id:'15', src: fraise, alt: 'Fraise', name: 'Fraise', price: '400 CFA' },
-  { id:'16', src: avocat, alt: 'Avocat', name: 'Avocat', price: '600 CFA' },
-  { id:'17', src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: '450 CFA', className :" h-45 w-70  bg-white" },
-  { id:'18', src: pomme, alt: 'Pomme', name: 'Pomme', price: '1000 CFA', className :" h-45 w-70  bg-white" },
-  { id:'19', src: banane, alt: 'Banane', name: 'Banane', price: '700 CFA', className :" h-45 w-70  bg-white" },
-  { id:'20', src: pasteque, alt: 'Pasteque', name: 'Pasteque', price: '1000 CFA', className :" h-45 w-70  bg-white"},
-  { id:'21', src: poire, alt: 'Poire', name: 'Poire', price: '250 CFA' , className :" h-45 w-70  bg-white"},
-  { id:'22', src: orange1, alt: 'Orange1', name: 'Orange', price: '350 CFA' , className :" h-45 w-70  bg-white"},
-  { id:'23', src: goyave, alt: 'Goyave', name: 'Goyave', price: '800 CFA', className :" h-45 w-70  bg-white" },
-  { id:'24', src: ananas, alt: 'Ananas', name: 'Ananas', price: '450 CFA', className :" h-45 w-70  bg-white" },
+  { id:'13', src: orange, alt: 'Orange', name: 'Orange', price: 350 , className: " h-45 w-70  bg-white", },
+  { id:'14', src: Mangue, alt: 'Mangue', name: 'Mangue', price: 250 , className :" h-45 w-70  bg-white"},
+  { id:'15', src: fraise, alt: 'Fraise', name: 'Fraise', price: 400 },
+  { id:'16', src: avocat, alt: 'Avocat', name: 'Avocat', price: 600 },
+  { id:'17', src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: 450, className :" h-45 w-70  bg-white" },
+  { id:'18', src: pomme, alt: 'Pomme', name: 'Pomme', price: 1000, className :" h-45 w-70  bg-white" },
+  { id:'19', src: banane, alt: 'Banane', name: 'Banane', price: 700, className :" h-45 w-70  bg-white" },
+  { id:'20', src: pasteque, alt: 'Pasteque', name: 'Pasteque', price: 1000, className :" h-45 w-70  bg-white"},
+  { id:'21', src: poire, alt: 'Poire', name: 'Poire', price: 250 , className :" h-45 w-70  bg-white"},
+  { id:'22', src: orange1, alt: 'Orange1', name: 'Orange', price: 350 , className :" h-45 w-70  bg-white"},
+  { id:'23', src: goyave, alt: 'Goyave', name: 'Goyave', price: 800, className :" h-45 w-70  bg-white" },
+  { id:'24', src: ananas, alt: 'Ananas', name: 'Ananas', price: 450, className :" h-45 w-70  bg-white" },
 
 ]
 
@@ -74,14 +74,14 @@ export default function Fruits() {
                 <button
                   onClick={() => {
                     addToCart({
-                      id: image.id,
-                      nom: image.name ?? 'Produit',
-                      prix: parseInt(image.price ?? '0', 10),
-                      image: image.src,
-                      description: '',
-                      stock: 100,
-                      unite: 'kg',
-                      quantity: 1,
+                     id: image.id,
+                    nom: image.name ,
+                    prix: image.price ,
+                    image: image.src,
+                    description: '',
+                    stock: 100,
+                    unite: 'kg',
+                    quantity: 1,
                     });
                     toast.success(`${image.name} ajouté au panier!`);
                   }}

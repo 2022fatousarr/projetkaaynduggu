@@ -14,8 +14,18 @@ export interface imageProps{
     src:string;
     alt:string;
     className?:string;
-    name?:string;
-    price:string;
+    name:string;
+    price: number ;
+    description?:string;
+    id:string;
+}
+
+
+export interface imageProps1{
+    src:string;
+    alt:string;
+    className?:string;
+    name:string;
     description?:string;
     id:string;
 }
