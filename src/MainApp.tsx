@@ -41,7 +41,7 @@ import PanierPage from "./pages/panier";
           <Route path="blog" element={<BlogPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="produit/:id" element={<ProductDetail />} /> {/* Route pour les détails du produit */}
-          </Route>
+        </Route>
 
         <Route path="/se_connecter" element={<Se_ConnecterPage />} />
         <Route path="/panier" element={<PanierPage  />} />

@@ -24,7 +24,7 @@ const PanierPage = () => {
       `Total: ${getTotal()} FCFA`;
 
     window.open(
-      `https://wa.me/221771234567?text=${message}`,
+      `https://wa.me/221782157371?text=${message}`,
       "_blank"
     );
   };
