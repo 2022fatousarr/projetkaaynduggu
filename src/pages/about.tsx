@@ -240,7 +240,7 @@ function AboutPage() {
           </h3>
 
           <p className="text-gray-600 text-sm">
-            {image.price}
+            {image.description}
           </p>
 
         </div>

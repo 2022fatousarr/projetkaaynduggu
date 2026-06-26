@@ -22,18 +22,18 @@ import { toast } from 'sonner';
 
 
  const images: imageProps[] = [
-   { id: "25", src: vjr, alt: 'Chocolat',name: 'vjr', price: '500 CFA',  className :" h-45 w-70 object-cover bg-white"},
-   { id: "2", src: lettue, alt: 'Lettue', name: 'Lettue', price: '300 CFA' , className :" h-45 w-70  "},
-   { id: "15", src: fraise, alt: 'Fraise', name: 'Fraise', price: '400 CFA' , className :" h-45 w-70  "},
-   { id: "16", src: avocat, alt: 'Avocat', name: 'Avocat', price: '600 CFA' , className :" h-45 w-70  "},
-   { id: "5", src: comcombre, alt: 'Comcombre', name: 'Comcombre', price: '200 CFA' , className :" h-45 w-70  "},
-   { id: "13", src: orange, alt: 'Orange', name: 'Orange', price: '1000 CFA', className :" h-45 w-70  " },
-   { id: "26", src: chili, alt: 'Chili', name: 'Chili', price: '700 CFA' , className :" h-45 w-70  bg-white"},
-   { id: "32", src: persil, alt: 'Persil', name: 'Persil', price: '150 CFA', className :" h-45 w-70  bg-white" },
-   { id: "14", src: Mangue, alt: 'Mangue', name: 'Mangue', price: '250 CFA' , className :" h-45 w-70  bg-white"},
-   { id: "20", src: pasteque, alt: 'Pasteque', name: 'Pasteque', price: '1000 CFA', className :" h-45 w-70  bg-white"},
-   { id: "23", src: goyave, alt: 'Goyave', name: 'Goyave', price: '800 CFA', className :" h-45 w-70  bg-white" },
-   { id: "17", src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: '450 CFA', className :" h-45 w-70  bg-white" },
+   { id: "25", src: vjr, alt: 'Chocolat',name: 'vjr', price: 500,  className :" h-45 w-70 object-cover bg-white"},
+   { id: "2", src: lettue, alt: 'Lettue', name: 'Lettue', price: 300 , className :" h-45 w-70  "},
+   { id: "15", src: fraise, alt: 'Fraise', name: 'Fraise', price: 400 , className :" h-45 w-70  "},
+   { id: "16", src: avocat, alt: 'Avocat', name: 'Avocat', price: 600 , className :" h-45 w-70  "},
+   { id: "5", src: comcombre, alt: 'Comcombre', name: 'Comcombre', price: 200 , className :" h-45 w-70  "},
+   { id: "13", src: orange, alt: 'Orange', name: 'Orange', price: 1000, className :" h-45 w-70  " },
+   { id: "26", src: chili, alt: 'Chili', name: 'Chili', price: 700 , className :" h-45 w-70  bg-white"},
+   { id: "32", src: persil, alt: 'Persil', name: 'Persil', price: 150, className :" h-45 w-70  bg-white" },
+   { id: "14", src: Mangue, alt: 'Mangue', name: 'Mangue', price: 250 , className :" h-45 w-70  bg-white"},
+   { id: "20", src: pasteque, alt: 'Pasteque', name: 'Pasteque', price: 1000, className :" h-45 w-70  bg-white"},
+   { id: "23", src: goyave, alt: 'Goyave', name: 'Goyave', price: 800, className :" h-45 w-70  bg-white" },
+   { id: "17", src: kiwi, alt: 'Kiwi', name: 'Kiwi', price: 450, className :" h-45 w-70  bg-white" },
 
  ]
 
@@ -59,7 +59,7 @@ import { toast } from 'sonner';
            <img src={image.src} alt={image.alt}  className='h-45  w-70 mx-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer ' />
            <div className="p-3 text-center space-y-2">
            <p className='text-[#88c74a] font-semibold text-lg'>{image.name}</p>
-           <p className="text-gray-600 text-sm">{image.price}</p>
+           <p className="text-gray-600 text-sm">{image.price} CFA</p>
            {activeId === image.id && (
 
      <div className="flex justify-center gap-3">
@@ -70,7 +70,7 @@ import { toast } from 'sonner';
       addToCart({
         id: image.id,
         nom: image.name ?? "Produit",
-        prix: parseInt(image.price.replace(" CFA", ""), 10),
+        prix: image.price,
         image: image.src,
         quantity: 1,
       });

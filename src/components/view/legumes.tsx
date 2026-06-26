@@ -64,7 +64,7 @@ export default function Legumes() {
             />
             <div className="p-3 text-center space-y-1">
               <p className='text-[#88c74a] font-semibold text-lg'>{image.name}</p>
-              <p className="text-gray-600 text-sm">{image.price}CFA</p>
+              <p className="text-gray-600 text-sm">{image.price} CFA</p>
             </div>
           </Link>
 
