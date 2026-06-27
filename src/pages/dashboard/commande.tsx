@@ -49,7 +49,7 @@ const CommandePage = () => {
           <tbody>
             {commandes.length === 0 ? (
               <tr>
-                <td colSpan="10" className="text-center py-4">
+                <td colSpan={4} className="text-center py-4">
                   Aucune commande.
                 </td>
               </tr>
